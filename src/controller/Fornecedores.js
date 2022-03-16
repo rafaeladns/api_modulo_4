@@ -8,6 +8,6 @@ export async function createTable(){
 
 export async function insertFornecedores(fornecedores){
   openDb().then(db =>{
-    db.run('INSERT INTO Fornecedores(nome, cnpj, endereco)VALUES (?,?)'), [fornecedores.nome, fornecedores.endereco, fornecedores.cnpj, fornecedores.email, fornecedores.telefone]
+    db.run('INSERT INTO Fornecedores VALUES (?,?,?,?)'), [fornecedores.nome, fornecedores.endereco, fornecedores.cnpj, fornecedores.email, fornecedores.telefone]
   });
 }
