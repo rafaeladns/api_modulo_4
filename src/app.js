@@ -1,12 +1,12 @@
-import {openDb} from './configDB.js';
+// import {openDb} from './configDB.js';
+import {createTable, insertFornecedores} from './controller/Fornecedores.js';
 
 //Importando express//
 import express from 'express';
 const app = express();
 app.use(express.json());
 
-openDb();
-
+createTable();
 //criando rota para o app//
 app.get('/', function(req, res){ //requisicao e resposta//
   res.send('Olá mundo!')
@@ -14,7 +14,7 @@ app.get('/', function(req, res){ //requisicao e resposta//
 
 //criando rota post//
 app.post('/fornecedores', function(req, res){
-  console.log(req.body);
+  insertFornecedores(req.body);
   res.json({
     "statusCode":200
   })
