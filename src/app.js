@@ -1,7 +1,11 @@
+import {openDb} from './configDB.js';
+
 //Importando express//
-const express = require('express');
+import express from 'express';
 const app = express();
 app.use(express.json());
+
+openDb();
 
 //criando rota para o app//
 app.get('/', function(req, res){ //requisicao e resposta//
