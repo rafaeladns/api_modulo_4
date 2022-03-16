@@ -1,0 +1,11 @@
+{
+  "name": "api_modulo_4",
+  "version": "1.0.0",
+  "description": "Api Módulo 4",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafaela Dias",
+  "license": "ISC"
+}
