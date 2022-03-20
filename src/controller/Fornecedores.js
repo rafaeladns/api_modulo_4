@@ -6,6 +6,7 @@ export async function createTable(){
   });
 }
 
+//Inserindo//
 export async function insertFornecedores(fornecedores){
   openDb().then(db =>{
     const listaDados = [fornecedores.nome, fornecedores.endereco, fornecedores.cnpj, fornecedores.telefone]
@@ -14,3 +15,17 @@ export async function insertFornecedores(fornecedores){
  });
 }
 
+//Update//
+export async function updateFornecedores(fornecedores){
+    openDb().then(db =>{
+      const listaDados = [fornecedores.nome, fornecedores.endereco, fornecedores.cnpj, fornecedores.telefone]
+      db.run('UPDATE fornecedores SET nome=? WHERE id=1;', listaDados[0])
+    })
+}
+
+//Delete/
+export async function deleteFornecedores(id){
+  openDb().then(db =>{
+    db.run('DELETE FROM  Fornecedores WHERE id=?;', id)
+  })
+}

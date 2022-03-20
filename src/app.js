@@ -1,5 +1,5 @@
 // import {openDb} from './configDB.js';
-import {createTable, insertFornecedores} from './controller/Fornecedores.js';
+import {createTable, insertFornecedores, updateFornecedores, deleteFornecedores} from './controller/Fornecedores.js';
 
 //Importando express//
 import express from 'express';
@@ -20,5 +20,33 @@ app.post('/fornecedores', function(req, res){
   })
 });
 
+//criando put//
+//Verificando se tem body e se não tiver campo nome adicionar//
+app.put('/fornecedores', function(req, res){
+  if(req.body && !req.body.nome){
+    res.json({
+      "statusCode": 400,
+      "msg":"Você precisa informar um nome"
+    })
+  }else{
+    updateFornecedores(req.body)
+    res.json({
+      "statusCode": 200
+    })
+  }
+})
+
+app.delete('/fornecedores/id/:id', function(req, res){
+  const id = req.params.id;
+  if(id){
+    deleteFornecedores(id)
+    res.json({
+      "msg": "Usuário deletado com sucesso!"
+    })
+  }
+})
+
 //Porta em que a aplicação estará rodando//
-app.listen(5000, ()=> console.log("Api rodando"))
+app.listen(5000, ()=> console.log("Api rodando"));
+
+

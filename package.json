@@ -15,5 +15,8 @@
     "sqlite": "^4.0.25",
     "sqlite3": "^5.0.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
