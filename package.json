@@ -4,8 +4,8 @@
   "description": "Api Módulo 4",
   "main": "src/app.js",
   "scripts": {
-    "dev": "nodemon src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "author": "Rafaela Dias",
   "license": "ISC",
@@ -17,6 +17,7 @@
   },
   "type": "module",
   "devDependencies": {
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
   }
 }

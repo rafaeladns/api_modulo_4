@@ -1,4 +1,21 @@
 import { openDb } from "../configDB.js";
+// async getFornecedores(id) { 
+//   const result = await OpenDB()
+//   console.log(result)
+//   return result
+// }
+// export async function getFornecedores(){
+//   openDb().then(db =>{
+//     db.all('SELECT * FROM Fornecedores;', (error, rows) =>{
+//     });
+//   })
+// }
+
+export async function getFornecedores() { 
+  const db = await openDb()
+  const result = await db.all("SELECT * FROM fornecedores;")
+  return result
+}
 
 export async function createTable(){
   openDb().then(db =>{
@@ -26,6 +43,6 @@ export async function updateFornecedores(fornecedores){
 //Delete/
 export async function deleteFornecedores(id){
   openDb().then(db =>{
-    db.run('DELETE FROM  Fornecedores WHERE id=?;', id)
+    db.run('DELETE FROM Fornecedores WHERE id=?;', id)
   })
 }
