@@ -1,15 +1,4 @@
 import { openDb } from "../configDB.js";
-// async getFornecedores(id) { 
-//   const result = await OpenDB()
-//   console.log(result)
-//   return result
-// }
-// export async function getFornecedores(){
-//   openDb().then(db =>{
-//     db.all('SELECT * FROM Fornecedores;', (error, rows) =>{
-//     });
-//   })
-// }
 
 export async function getFornecedores() { 
   const db = await openDb()

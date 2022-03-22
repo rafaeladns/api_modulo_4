@@ -1,5 +1,4 @@
 import {openDb} from './configDB.js';
-// import {createTable, insertFornecedores, updateFornecedores, deleteFornecedores} from './controller/Fornecedores.js';
 
 //Importando express//
 import express from 'express';
