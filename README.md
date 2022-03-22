@@ -53,21 +53,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [SQLite3](https://www.npmjs.com/package/sqlite3)
 
 ---
-### Testes Unitários
+### Testes 
 
-O arquivo de testes foi implementado ao projeto para conferir o funcionamento das rotas através da biblioteca [Supertest](https://www.npmjs.com/package/supertest) com o Framework [Jest](https://jestjs.io/).
-Para utilizar o Jest, precisamos **instalá-lo como dependência de desenvolvimento** do projeto e configurar o script `test` no package.json para `jest`.
-
-Utilizei a extensão do VSCode `ThunderClient` para rodar os testes, você pode optar pela mesma ou instalar outra ferramenta semelhante como o [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/).
-
-Obs: as tabelas não estão *populadas*, para realizar os testes você deverá inserir as informações através da rota **Post**.
-
-Para executar os testes basta rodar no terminal os seguintes comandos: 
-```sh
-  $ npm run dev # iniciando o nodemon em modo desenvolvedor
-  $ npm start 
-  $ npm run test # iniciando testes
-```
 ---
 ### Rotas
  ### GET - /
