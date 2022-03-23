@@ -45,7 +45,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Nodemon](https://nodemon.io/)
 - [Jest](https://jestjs.io/)
 - [Supertest](https://www.npmjs.com/package/supertest)
-- [Cors](https://www.npmjs.com/package/cors)
 
 *Framework* 
 - [Express](https://expressjs.com/pt-br/)
