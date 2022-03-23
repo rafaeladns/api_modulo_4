@@ -22,10 +22,10 @@ export async function insertFornecedores(fornecedores){
 }
 
 //Update//
-export async function updateFornecedores(fornecedores){
+export async function updateFornecedores(fornecedores,id){
     openDb().then(db =>{
       const listaDados = [fornecedores.nome, fornecedores.endereco, fornecedores.cnpj, fornecedores.telefone]
-      db.run('UPDATE fornecedores SET nome=? WHERE id=1;', listaDados[0])
+      db.run('UPDATE fornecedores SET nome=?, endereco=?, cnpj=?, telefone=? WHERE id=?;', listaDados[0],listaDados[1], listaDados[2],listaDados[3],id)
     })
 }
 

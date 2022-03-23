@@ -21,14 +21,14 @@ const controllerFornecedores = (app, database) =>{
   
   //criando put//
   //Verificando se tem body e se não tiver campo nome adicionar//
-  app.put('/fornecedores', function(req, res){
+  app.put('/fornecedores/id/:id', function(req, res){
     if(req.body && !req.body.nome){
       res.json({
         "statusCode": 400,
         "msg":"Você precisa informar um nome"
       })
     }else{
-      updateFornecedores(req.body)
+      updateFornecedores(req.body, req.params.id)
       res.json({
         "statusCode": 200
       })
