@@ -5,7 +5,7 @@
 ### Sobre a API
 
 Criação de API REST que traz informações sobre os referente aos fornecedores de uma loja de informática. <br>
-Foi utilizado os verbos HTTP seguindo o padrão REST e contendo as operações CRUD.
+Foram utilizados os verbos HTTP seguindo o padrão REST e contendo as operações CRUD.
 
 ---
 ### Pré-requisitos 
