@@ -69,8 +69,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 		"cnpj": 19906227000129,
 		"telefone": "011 33332222"
 	}
-]
-    ```
+]```
  ### POST - /fornecedores
  ```sh
  Schema da requisição
