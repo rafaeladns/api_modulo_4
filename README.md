@@ -19,7 +19,7 @@ Para executar o projeto você precisará ter instalado em sua máquina as seguin
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/rafaeladns/api_modulo_4>
+$ git clone https://github.com/rafaeladns/api_modulo_4
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd api_modulo_4
@@ -54,21 +54,23 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 ### Testes 
-
+- Para rodar o teste implementado execute npm run test
 ---
 ### Rotas
- ### GET - /
+* **GET /produtos**
  
     Schema da resposta
-    ```[
+    ```
+    [
 	{
-		"id": 3,
-		"nome": "Bugfree",
-		"endereco": "Rua Pereira 3543 Santa Luzia Autazes Amazonas",
-		"cnpj": 93586011000186,
-		"telefone": "092 54532343"
+		"id": 4,
+		"nome": "Phillips",
+		"endereco": "Rua Doutor José de Almeida Villas Boas 34 Portal D'Oeste Osasco São Paulo",
+		"cnpj": 19906227000129,
+		"telefone": "011 33332222"
 	}
-
+]
+    ```
  ### POST - /fornecedores
  ```sh
  Schema da requisição
