@@ -86,20 +86,21 @@ Schema da resposta
 }
 ```
 
- ### PUT /fornecedores
+ ### PUT /fornecedores/id/:id
 
   ```sh
  Schema da requisição
 {
-	"nome": "Oi",
-	"endereco": "Alameda dos Judiciários 500 Cabral São Paulo SP",
-	"cnpj": 297168778783000137,
-	"telefone": "031 0000"
+	"nome": "XGamer",
+	"endereco": "Rua Lagoa dos Ingleses, 500, Centro, Belo Horizonte- MG",
+	"cnpj": 297445448778783000138,
+	"telefone": "31 26768965"
 }
 
 Schema resposta
 {
-	"statusCode": 200
+	"statusCode": 200,
+	"msg": "Dados alterados com sucesso!"
 }
  ```
 ---
