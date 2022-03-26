@@ -61,6 +61,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  
     Schema da resposta
     ```
+    http://localhost:5000
     [
 	{
 		"id": 4,
@@ -72,6 +73,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
     ]
  ### POST - /fornecedores
  ```sh
+ http://localhost:5000/fornecedores
  Schema da requisição
   {
 	"nome": "Cloud Tecnologia",
@@ -89,6 +91,7 @@ Schema da resposta
  ### PUT /fornecedores/id/:id
 
   ```sh
+  http://localhost:5000/fornecedores/id/21
  Schema da requisição
 {
 	"nome": "XGamer",
@@ -107,6 +110,7 @@ Schema resposta
   ### DELETE /fornecedores/id/:id
 
   ```sh
+  http://localhost:5000/fornecedores/id/21
  Schema da requisição
 {
 	"nome": "XGamer",
