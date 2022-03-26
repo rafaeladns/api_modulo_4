@@ -1,3 +1,4 @@
+//Importando//
 import {createTable, insertFornecedores, updateFornecedores, deleteFornecedores, getFornecedores} from '../dao/fornecedores-dao.js';
 import Fornecedores from '../model/fornecedores-model.js';
 createTable();
