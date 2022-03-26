@@ -37,7 +37,7 @@ $ npm run dev
 ```
 
 ---
-### Tecnologias neste projeto
+### Tecnologias utilizadas neste projeto
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
