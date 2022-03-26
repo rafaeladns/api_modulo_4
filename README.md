@@ -103,6 +103,23 @@ Schema resposta
 	"msg": "Dados alterados com sucesso!"
 }
  ```
+ 
+  ### DELETE /fornecedores/id/:id
+
+  ```sh
+ Schema da requisição
+{
+	"nome": "XGamer",
+	"endereco": "Rua Lagoa dos Ingleses, 500, Centro, Belo Horizonte- MG",
+	"cnpj": 297445448778783000138,
+	"telefone": "31 26768965"
+}
+
+Schema resposta
+{
+	"msg": "Usuário deletado com sucesso!"
+}
+ ```
 ---
 ### Contato
 
