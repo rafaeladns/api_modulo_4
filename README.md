@@ -68,7 +68,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 		"endereco": "Rua Doutor José de Almeida Villas Boas 34 Portal D'Oeste Osasco São Paulo",
 		"cnpj": 19906227000129,
 		"telefone": "011 33332222"
-	}]
+	}
+    ]
  ### POST - /fornecedores
  ```sh
  Schema da requisição
